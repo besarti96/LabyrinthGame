@@ -1,0 +1,12 @@
+Das Paket main enthält die Hauptklasse GamePanel, die das Spiel-Fenster und die Spiel-Loop verwaltet. Sie initialisiert alle erforderlichen Komponenten und behandelt Benutzereingaben.
+Das Paket entity enthält die Klassen Entity, Player und Player2, die für die Darstellung und Steuerung der Spieler im Spiel verantwortlich sind. Die Klasse Entity definiert gemeinsame Eigenschaften wie Position, Geschwindigkeit und Bildern für die Spieler. Die Klassen Player und Player2 erweitern Entity und implementieren die spezifischen Steuerungsfunktionen und Animationen für jeden Spieler.
+Das Paket tilesMap enthält die Klassen tilesManager und tilesMap, die für die Darstellung der Spielkarte und die Verwaltung der Kacheln verantwortlich sind. Die Klasse tilesManager lädt die Kachelbilder und die Kartendaten aus Textdateien und zeichnet die Karte auf den Bildschirm. Die Klasse tilesMap repräsentiert eine einzelne Kachel mit einem Bild und einem Kollisionsattribut.
+Der Gesamtcode funktioniert wie folgt:
+Beim Starten des Spiels wird die Hauptklasse GamePanel initialisiert, die das Spiel-Fenster erstellt und alle erforderlichen Komponenten initialisiert.
+Der tilesManager wird initialisiert, um die Kacheln zu laden und die Karteninformationen zu laden.
+Die Spieler (Player und Player2) werden initialisiert und mit den entsprechenden Grafiken versehen.
+Die Spiel-Loop in der Hauptklasse GamePanel wird gestartet. In jedem Schleifendurchlauf werden Benutzereingaben abgefragt und die Spieler-Objekte aktualisiert und gezeichnet. Der tilesManager zeichnet die Karte basierend auf den Kartendaten.
+Die Spieler-Objekte verarbeiten die Benutzereingaben, ändern ihre Positionen basierend auf der Steuerung und überprüfen auf Kollisionen mit den Kacheln der Karte.
+Die Grafiken der Spieler-Objekte werden entsprechend der Bewegungsrichtung und Animationsphasen aktualisiert und auf den Bildschirm gezeichnet.
+Der tilesManager zeichnet die Kacheln der Karte auf den Bildschirm basierend auf den Kartendaten.
+
