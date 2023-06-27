@@ -36,7 +36,7 @@ public class Player2 extends Entity{
 		
 		x = 670;
 		y = 475;
-		speed = 3;
+		speed = 4;
 		direction = "down";
 		
 	}
